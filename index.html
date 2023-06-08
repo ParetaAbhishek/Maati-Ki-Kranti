@@ -156,43 +156,93 @@
   
 </style>
 
-
+<link href="./minified.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
  <!--header-->
-    <nav class=" navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Maati Ki Kranti</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Service 1</a></li>
-              <li><a href="#">Service 2</a></li>
-              <li><a href="#">Service 3</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Schemes
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="./statescheme.html">State Scheme</a></li>
-              <li><a href="#">Central scheme</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Join Us</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"> Concept</a></li>
-          <li><a href="#"> Our Work</a></li>
-        </ul>
+   <nav>
+    <div class="header">
+      <style>
+          @media print {
+              .header {
+                  display: none;
+              }
+          }
+      </style>
+      <div class="hide-for-mob">
+          <div class="headerRow headerSize row">
+              <div class="col-md-2">
+                  <a href="/agriculture">
+                      <div class="home" alt="home"><img src="#" alt="" /></div>
+                  </a>
+              </div>
+              <div class="col-md-10">
+                  <div class="headerRow1 row">
+                      <div class="lang_align col-md-4 col-sm-3"><a title="English"
+                              class="langLeft headerRow2 englishFont  ">ENGLISH</a><a
+                              href="https://xn--j2bd4cyah0f.xn--11by0av0at5becfj.xn--h2brj9c" title="Hindi"
+                              class="headerRow2 alignText englishFont ">हिंदी</a>
+                          <a href="https://xn--d2b1ag0dl.xn--11by0av0at5becfj.xn--h2brj9c" title="Marathi"
+                              class="headerRow2 alignText ">मराठी</a><a
+                              href="https://xn----cjf1b9a0a5aw1chgj7m.xn--rvc1e0am3e" title="Malyalam"
+                              class="headerRow2 alignText hide">മലയാളം</a><a
+                              href="https://xn--clcu6av0at5becfj8m.xn--xkc2dl3a5ee0h" title="Tamil"
+                              class="headerRow2 alignText hide">தமிழ்</a>
+                          <a href="https://xn--p5by0ags3b6blfceb.xn--45brj9c" title="Bengali"
+                              class="headerRow2 hide">বাংলা</a>
+                      </div>
+                      <div class="col-md-3 col-sm-2">
+                          <div class="marq" title="Click to view other languages" id="searchLang">
+                              <marquee class="alignTextMarq">অসমীয়া   বাংলা   बोड़ो   डोगरी   ગુજરાતી   ಕನ್ನಡ   كأشُر
+                                    कोंकणी   संथाली   মনিপুরি   नेपाली   ଓରିୟା   ਪੰਜਾਬੀ   संस्कृत   தமிழ்  తెలుగు  
+                                  ردو</marquee>
+                          </div>
+                      </div>
+                      <div class="alignImage loginAlign hideInput col-md-5 col-sm-6">
+                          <div class="dropdown"><button aria-haspopup="true" aria-expanded="false"
+                                  style="color:#ffffff00;background-color:#ffffff00;border-color:#ffffff00;box-shadow:#ffffff00"
+                                  type="button"
+                                  class="fontIcon accessbility-options dropdown-toggle btn btn-primary"></button>
+                          </div>
+                          <div class="logRegAlign"><a class="headerRow2  alignText landscape"
+                                  href="/register">Register</a>
+                              <a class="headerRow2 contentAlign alignText" href="/loginform">
+                                  <!-- -->Login</a>
+                          </div>
+                          <form class="form-inline"><input type="text" value="" placeholder="Search Within Portal"
+                                  id="portalSearch" class="mr-sm-2 main-searchbar form-control" /><i
+                                  class="fa fa-search search-icon" aria-hidden="true"></i></form>
+                          <div class="searchResult">
+                              <div></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="domainrow" class="domainrow hideMob  row">
+                      <div class="agri hideMob "><img alt="" /></div><a title="Agriculture"
+                          class="headerRow2 agriText domainFont hideMob " href="/agriculture">Agriculture</a>
+                      <div class="health hideMob" alt="health"><img alt="" /></div><a title="Health"
+                          class="headerRow2 healthText domainFont hideMob " href="/health">Health</a>
+                      <div class="edu hideMob" alt="edu "><img alt="" /></div><a title="Education"
+                          class="headerRow2 eduText domainFont hideMob " href="/education">Education</a>
+                      <div class="sw domainSw hideMob" alt="hideMob"><img alt="" /></div><a title="Social Welfare"
+                          class="headerRow2 swText domainFont hideMob " href="/social-welfare">Social Welfare</a>
+                      <div class="domainEnergy hideMob energy" alt="hideMob energy"><img alt="" /></div><a
+                          title="Energy" class="headerRow2 energyText domainFont hideMob " href="/energy">Energy</a>
+                      <div class="domainEgov hideMob egov" alt="hideMob egov"><img alt="" /></div><a
+                          title="e-Governance" class="headerRow2 egovText domainFont hideMob "
+                          href="/e-governance">e-Governance</a>
+                      <div class="domainEgov hideMob scheme" alt="scheme"><img alt="" /></div><a title="Schemes"
+                          class="headerRow2 egovText domainFont hideMob " href="/schemes">Schemes</a>
+                      <div class="domainEgov hideMob aspirational" alt="aspirational"><img alt="" /></div><a
+                          title="Aspirational" class="headerRow2 egovText domainFont hideMob "
+                          href="/aspirational">Aspirational Districts</a>
+                  </div>
+              </div>
+          </div>
       </div>
-    </nav>
+  </div>
+   </nav>
 <!--background-image-->
 <div id="banner_image">
     <center>
